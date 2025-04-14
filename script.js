@@ -34,7 +34,7 @@ questions.forEach((q, index) => {
     <label><input type="radio" name="q${index}" value="5"> I am addicted</label>
     <label><input type="radio" name="q${index}" value="4"> Yes</label>
     <label><input type="radio" name="q${index}" value="2"> No</label>
-    <label><input type="radio" name="q${index}" value="1"> Some times</label>
+    <label><input type="radio" name="q${index}" value="1"> Sometimes</label>
   `;
   quizDiv.appendChild(div);
 });
