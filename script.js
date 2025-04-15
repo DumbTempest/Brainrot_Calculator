@@ -1,3 +1,5 @@
+console.log("Script loaded!");
+
 const questions = [
   { text: "Do you refer to yourself as 'based'?", values: [5, 4, 2, 1] },
   { text: "Do you spend over 4 hours a day on Twitter?", values: [5, 4, 2, 1] },
@@ -28,7 +30,7 @@ const quizDiv = document.getElementById("quiz");
 
 questions.forEach((q, index) => {
   const div = document.createElement("div");
-  div.classList.add("question");
+  div.classList.add("brainrot-question");  // Updated class to match the CSS
   div.innerHTML = `
     <p>${index + 1}. ${q.text}</p>
     <label><input type="radio" name="q${index}" value="5"> I am addicted</label>
@@ -40,6 +42,8 @@ questions.forEach((q, index) => {
 });
 
 document.getElementById("submitBtn").addEventListener("click", () => {
+  console.log("✅ Submit button clicked!");
+
   // Check if all questions are answered
   let allAnswered = true;
   questions.forEach((q, index) => {

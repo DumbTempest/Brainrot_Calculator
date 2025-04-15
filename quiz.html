@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brainrot Detector</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    
+  <!-- Home Button -->
+  <button id="homeBtn" class="brainrot-btn btn btn-secondary">🏠 Home</button>
+
+  <div class="brainrot-container">
+    <h1 class="brainrot-title" >🧠 Brainrot Detector</h1>
+    <div id="quiz" class="brainrot-quiz"></div>
+    <button id="submitBtn" class="brainrot-btn btn btn-primary">Get Brainrot Score</button>
+    <p id="warningMessage" class="brainrot-warning">⚠️ Please answer all questions.</p>
+  </div>
+
+  <!-- Modal -->
+  <div id="resultModal" class="brainrot-modal modal hidden">
+    <div class="brainrot-modal-content modal-content">
+      <span id="closeModal" class="brainrot-close">&times;</span>
+      <p id="resultText"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    // JavaScript for home button functionality
+    document.getElementById('homeBtn').addEventListener('click', function() {
+      window.location.href = '/'; // Redirect to home page
+    });
+  </script>
+</body>
+</html>

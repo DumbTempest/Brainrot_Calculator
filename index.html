@@ -3,25 +3,48 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Brainrot Detector</title>
+  <title>🧠 Gen Z Analyzer</title>
   <link rel="stylesheet" href="styles.css" />
+  <!-- Add Bootstrap CSS for Navbar styling -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
-  <div class="container">
-    <h1>🧠 Brainrot Detector</h1>
-    <div id="quiz"></div>
-    <button id="submitBtn">Get Brainrot Score</button>
-    <p id="warningMessage">⚠️ Please answer all questions.</p>
-  </div>
-
-  <!-- Modal -->
-  <div id="resultModal" class="modal hidden">
-    <div class="modal-content">
-      <span id="closeModal">&times;</span>
-      <p id="resultText"></p>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-header text-white">
+    <a class=" navbar-brand" href="#">🧠 Gen Z Analyzer</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  href="quiz.html">Brainrot Quiz</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Aura Calculator</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">More Quizzes</a>
+        </li>
+      </ul>
     </div>
+    <div class="navbar-nav mr-5">
+      <!-- <a href="signup.html" class="btn btn-primary">Sign Up</a> -->
+    </div>
+  </nav>
+
+  <!-- Home Page content -->
+  <div class="home-container">
+    <h2>🧠 Calculate Your Rot</h2>
+    <p class="subtitle">Find out how terminally online you are</p>
+    <a href="quiz.html" class="start-btn">Start Quiz</a>
   </div>
 
-  <script src="script.js"></script>
+  <!-- Add Bootstrap JS for Navbar toggle functionality -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
