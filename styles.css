@@ -9,7 +9,8 @@ body {
   overflow-y: auto;
 }
 .brainrot-title{
-  font-size: 2rem; /* Increased font size */
+  margin: 5vh;
+  font-size: 2.5rem; /* Increased font size */
 }
 
 .brainrot-container {
@@ -108,7 +109,7 @@ header.navbar {
 }
 
 .brainrot-question p {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 600;
   margin-bottom: 15px;
 }
@@ -117,7 +118,7 @@ header.navbar {
   display: block;
   margin: 10px 0;
   margin-left: 10px;
-  font-size: 1.2rem; /* Increased font size */
+  font-size: 1.6rem; /* Increased font size */
   cursor: pointer;
 }
 
@@ -234,7 +235,7 @@ html {
 }
 
 .navbar-brand {
-  font-weight: 600;
+  font-size: 2rem;
   padding-right: 20%;
 }
 
