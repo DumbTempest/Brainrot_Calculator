@@ -181,6 +181,9 @@ button {
   margin-bottom: 20px;
   color: #e91e63;
 }
+.brainrot-close{
+  cursor: pointer;;
+}
 
 
 
